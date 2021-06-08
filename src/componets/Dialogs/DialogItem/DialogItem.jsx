@@ -9,6 +9,4 @@ function DialogItem(props) {
   )
 };
 
-
-
 export default DialogItem;

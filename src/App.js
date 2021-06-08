@@ -17,8 +17,10 @@ function App(props) {
           {/* <Route path='/Dialogs' component={Dialogs} />
           <Route path='/Profile' component={Profile} /> */}
 
-          <Route path='/Dialogs' render={() => <Dialogs dialogs={props.dialogs} messages={props.messages} />} />
-          <Route path='/Profile' render={() => <Profile posts={props.posts} />} />
+          <Route path='/Dialogs'
+            render={() => <Dialogs state={props.state.dialogsPage} />} />
+          <Route path='/Profile'
+            render={() => <Profile state={props.state.profilePage} />} />
         </div>
       </div>
     </BrowserRouter>
