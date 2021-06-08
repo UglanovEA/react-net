@@ -4,26 +4,24 @@ import Header from './componets/Header/Header.jsx';
 import Nav from './componets/Navigation/Navigation.jsx';
 import Profile from './componets/Profile/Profile.jsx';
 import Dialogs from './componets/Dialogs/Dialogs.jsx';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 function App(props) {
   return (
-    <BrowserRouter>
-      <div className='app-wrapper'>
-        <Header />
-        <Nav />
-        <div class='app-wrapper-content'>
+    <div className='app-wrapper'>
+      <Header />
+      <Nav />
+      <div className='app-wrapper-content'>
 
-          {/* <Route path='/Dialogs' component={Dialogs} />
+        {/* <Route path='/Dialogs' component={Dialogs} />
           <Route path='/Profile' component={Profile} /> */}
 
-          <Route path='/Dialogs'
-            render={() => <Dialogs state={props.state.dialogsPage} />} />
-          <Route path='/Profile'
-            render={() => <Profile state={props.state.profilePage} />} />
-        </div>
+        <Route path='/Dialogs'
+          render={() => <Dialogs state={props.state.dialogsPage} />} />
+        <Route path='/Profile'
+          render={() => <Profile state={props.state.profilePage} addPost={props.addPost} />} />
       </div>
-    </BrowserRouter>
+    </div>
   );
 }
 export default App;
