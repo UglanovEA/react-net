@@ -3,8 +3,8 @@ let state = {
     posts: [
       { id: 1, message: 'hi, how are you', likesCount: 12 },
       { id: 2, message: 'it\'s my post', likesCount: 15 },
-    ]
-
+    ],
+    newPostText: 'hello'
   },
   dialogsPage: {
     dialogs: [
