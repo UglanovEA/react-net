@@ -1,4 +1,3 @@
-import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts.jsx';
 import ProfileInfo from './ProfileInfo/ProfileInfo.jsx';
 
@@ -10,6 +9,7 @@ function Profile(props) {
       <MyPosts
         posts={props.profilePage.posts}
         newPostText={props.profilePage.newPostText}
+        updateNewPostText={props.updateNewPostText}
         addPost={props.addPost}
       />
     </div>
