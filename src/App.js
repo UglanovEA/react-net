@@ -17,7 +17,7 @@ function App(props) {
           <Route path='/Profile' component={Profile} /> */}
 
         <Route path='/Dialogs'
-          render={() => <Dialogs state={props.state.dialogsPage} />} />
+          render={() => <Dialogs store={props.store} />} />
         <Route path='/Profile'
           render={() => <Profile
             profilePage={props.state.profilePage}
