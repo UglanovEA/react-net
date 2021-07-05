@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { followActionCreator, setUserActionCreator, unfollowActionCreator } from '../../redux/users-reducer';
 import Users from './Users.jsx';
 
+
 let mapStateToProps = (state) => {
   return {
     users: state.usersPage.users
