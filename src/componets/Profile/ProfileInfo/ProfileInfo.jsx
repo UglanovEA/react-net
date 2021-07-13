@@ -1,6 +1,10 @@
+import Preloader from '../../Common/Preloader/preloader';
 import s from './ProfileInfo.module.css';
 
-function ProfileInfo() {
+function ProfileInfo(props) {
+  if (!props.profile) {
+    return <Preloader />
+  }
   return (
     <div>
       <div>
@@ -8,6 +12,7 @@ function ProfileInfo() {
         </img>
       </div>
       <div className={s.descriptionBlock}>
+        <img src={props.profile.photos.large} alt=""></img>
         ava + description
       </div>
     </div>

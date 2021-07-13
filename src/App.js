@@ -2,10 +2,10 @@
 import './App.css';
 import Header from './componets/Header/Header.jsx';
 import Nav from './componets/Navigation/Navigation.jsx';
-import Profile from './componets/Profile/Profile.jsx';
 import { Route } from 'react-router-dom';
 import DialogsContainer from './componets/Dialogs/DialogsContainer';
 import UsersContainer from './componets/Users/UsersContainer.jsx';
+import ProfileContainer from './componets/Profile/ProfileContainer';
 
 function App(props) {
   return (
@@ -17,7 +17,7 @@ function App(props) {
           render={() => <DialogsContainer />}
         />
         <Route path='/Profile'
-          render={() => <Profile />}
+          render={() => <ProfileContainer />}
         />
         <Route path='/Users'
           render={() => <UsersContainer />}
