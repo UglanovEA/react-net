@@ -16,7 +16,7 @@ function App(props) {
         <Route path='/Dialogs'
           render={() => <DialogsContainer />}
         />
-        <Route path='/Profile'
+        <Route path='/Profile/:userId?'
           render={() => <ProfileContainer />}
         />
         <Route path='/Users'
